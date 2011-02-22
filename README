@@ -1,0 +1,31 @@
+Les scripts de ce repository sont sous licence GNU/GPL
+
+##############################
+* tv-indexer.sh *
+Permet de créer un index de liens symbolique de ses séries tv
+
+exemple:
+/nas/tv/bla.s02e03.avi
+/nas/tv/bla.s02e04.avi
+/nas/tv/bli.1x05.mkv
+/nas/tv/bli.1x05.srt
+
+=>
+/nas/tv-index/bla/(bla.s02e03.avi,bla.s02e04.avi)
+/nas/tv-index/bli/(bli.1x05.mkv,bli.1x05.srt)
+
+###############################
+* télécharger une vidéo par son url *
+Télécharge une vidéo de youtube au format flv ou mp4
+
+Prérequis:
+- zenity - http://doc.ubuntu-fr.org/zenity
+- youtube-dl - https://github.com/rg3/youtube-dl/
+
+
+################################
+* convertir tous les flv en mp3 *
+Convertis en masse tout les flv et mp3 du dossier courant en mp3
+
+Prérequis:
+- ffmpeg

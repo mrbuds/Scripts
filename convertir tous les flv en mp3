@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for file in *.flv *.mp4
+do
+  mp3name="`echo "$file" | sed 's/\(flv\|mp4\)$/mp3/'`"
+  if [ ! -e "$mp3name" ]
+  then
+    ffmpeg -i "$file"  "$mp3name" &
+  fi
+done
+exit 

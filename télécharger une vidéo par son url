@@ -1,0 +1,7 @@
+#!/bin/bash
+
+url=$(zenity --entry \
+  --title="Youtub2mp3" \
+  --text="Saisissez une url de vidéo :")
+
+youtube-dl -cl --no-progress "${url}"
